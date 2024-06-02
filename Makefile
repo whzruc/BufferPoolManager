@@ -1,6 +1,6 @@
 # 编译器设置
 CXX = g++
-CXXFLAGS = -std=c++14 -Wall 
+CXXFLAGS = -std=c++14 -Wall -g
 
 # 源文件列表
 SRCS = main.cpp bufferManager.cpp helper.cpp
@@ -9,7 +9,7 @@ SRCS = main.cpp bufferManager.cpp helper.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 # 可执行文件名称
-TARGET = my_program
+TARGET = main
 
 # 默认目标，生成可执行文件
 $(TARGET): $(OBJS)
